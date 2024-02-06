@@ -1,0 +1,36 @@
+Mani Tej
+Professor CR rao road, Gachibowli
+Hydeerabad, Telangana, 500032
+manitej.sriram@students.iiit.ac.in
+78XXXXXX29
+
+Objective:
+I want to become a web designer
+
+Education:
+B. Tech in CSE
+IIIT - Hyd, Gachibowli, Hydeerabad
+2023 - 2027
+
+[High School Diploma]
+[High School Name], [City, State]
+[Month Year] - [Month Year]
+
+Skills:
+- C, C++, JS, Python, HTML, CSS
+- Communication Skills, Self-motivated, Self-Determined
+
+Projects:
+Project snake
+Design a snake game
+to write a c code for it
+
+Design the minesweeper game
+to write a c code for it
+
+Achievements:
+- Achieved XXX rank in JEE mains
+- Achieved YYY rank in JEE advanced
+
+References:
+Available upon request.

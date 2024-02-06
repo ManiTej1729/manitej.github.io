@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog 1</title>
+        <style>
+            .list-element{
+                color: blue;
+                padding: 20px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">MrBeast</h1>
+        <img src="mrbeastlogo.png" alt="MrBeast" style="border: 2px solid black; margin-left: 50%; transform: translate(-50%, 0%); padding: 10px;">
+        <p style="text-align: center;"><b>MrBeast is the greatest Youtuber of all time</b></p>
+        <p id="likes">No. of likes = 0</p>
+        <br><button onclick="togfun1()"><span id="toggle1">Like</span></button>
+        <br><button onclick="togfun2()"><span id="toggle2">Disike</span></button><br>
+        <script>
+            var likes = 0;
+            var html_common = `No. of likes = `
+            function togfun1() {
+                document.getElementById('toggle1').style.backgroundColor = 'green'
+                document.getElementById('toggle2').style.backgroundColor = 'white'
+                likes++;
+                document.getElementById('likes').innerHTML = html_common + likes;
+            }
+            function togfun2() {
+                document.getElementById('toggle2').style.backgroundColor = 'red'
+                document.getElementById('toggle1').style.backgroundColor = 'white'
+                if (likes > 0) {
+                    likes--;
+                }
+                document.getElementById('likes').innerHTML = html_common + likes;
+            }
+        </script>
+        <input type="text" id="input" placeholder="Type a comment" />
+        <button onclick="clearInput()">Submit</button>
+        <ul id="appmsg"></ul>
+        <script>
+            function clearInput() {
+                var html_content = `
+                 <li class='list-element'>` + document.getElementById('input').value + " Time stamp: " + new Date() +  `</li>
+                `
+                document.getElementById('appmsg').innerHTML = html_content + document.getElementById('appmsg').innerHTML;
+                document.getElementById('input').value = '';
+            }
+        </script>
+    </body>
+</html>
